@@ -1,10 +1,5 @@
+- provide(:button_text, 'Create my account')
 h1 Sign up
 .row
   .col-md-6.col-md-offset-3
-    = simple_form_for @user, url: signup_path do |f|
-      = render 'shared/error_message'
-      = f.input :name
-      = f.input :email
-      = f.input :password
-      = f.input :password_confirmation
-      = f.submit "Create my account"
+    = render 'form'
