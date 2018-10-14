@@ -1,0 +1,7 @@
+= simple_form_for @event do |f|
+  = f.input :title
+  = f.input :occurance_date, as: :datetime, html5: true,
+            input_html: { value: default_date(@event) }
+  = f.input :repeat_interval, collection: Event.interval_types,
+            selected: @event.repeat_interval || :singular
+  = f.submit

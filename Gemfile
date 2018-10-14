@@ -40,11 +40,16 @@ gem 'simple_form'
 gem 'ice_cube', '~> 0.14.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+gem 'http_accept_language'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'database_cleaner'
 end
 
 group :development do

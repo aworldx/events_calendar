@@ -1,0 +1,15 @@
+h2 class="card-header"
+  = @event.title
+.form-group
+  = label @event, :occurance_date
+  = text_field @event, :occurance_date,
+               value: I18n.localize(@event.occurance_date, format: :short),
+               class: 'form-control', disabled: true
+.form-group
+  = label @event, :user
+  = text_field @event, :user, value: @event.user.name, class: 'form-control',
+               disabled: true
+.form-group
+  = label @event, :repeat_interval
+  = text_field @event, :repeat_interval, value: @event.repeat_interval,
+               class: 'form-control', disabled: true

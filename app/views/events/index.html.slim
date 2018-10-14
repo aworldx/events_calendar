@@ -1,0 +1,11 @@
+.row
+  .col-md-3
+    - if params[:all_events]
+      = link_to t('.my_events'), events_path
+    - else
+      = link_to t('.all_events'), events_path(all_events: true)
+  .col-md-3
+    = link_to t('.add_new_event'), new_event_path
+.row
+  .col-md-12
+    #calendar

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: %i[index edit update]
-  before_action :correct_user,   only: %i[edit update]
+  before_action :correct_user, only: %i[edit update]
 
   def index
     @users = User.all
@@ -18,10 +18,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       log_in @user
-      flash[:success] = 'Welcome to the Sample App!'
+      flash[:success] = t('messages.welcome')
       redirect_to @user
     else
-      render 'new'
+      render :new
     end
   end
 
@@ -32,10 +32,10 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
-      flash[:success] = 'Profile updated'
+      flash[:success] = t('messages.profile_updated')
       redirect_to @user
     else
-      render 'edit'
+      render :edit
     end
   end
 

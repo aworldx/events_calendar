@@ -1,0 +1,55 @@
+ru:
+  app_title: Календарь событий
+  home: На главную
+  profile:  Профиль
+  to_users: Пользователи
+  settings: Настройки
+  log_out: Выйти
+  log_in: Вход
+  sign_up: Регистрация
+  new_user?: Новый пользователь?
+  messages:
+    invalid_credintials: Неправильные адрес электронной почты или пароль
+    welcome: Добро пожаловать в Календарь Событий
+    profile_updated: Профиль обновлен
+    please_log_in: Пожалуйста авторизуйтесь
+    event_created: Событие успешно создано
+    event_updated: Событие успешно обновлено
+  events:
+    index:
+      title: События
+      add_new_event: Добавить событие
+      my_events: Мои события
+      all_events: Все события
+    show:
+      title: Просмотр информации о событии
+    edit:
+      title: Редактирование события
+    new:
+      title: Создание события
+  users:
+    index:
+      title: Пользователи
+    show:
+      title: Профиль пользователя
+    edit:
+      title: Редактирование профиля пользователя
+    new:
+      title: Регистрация
+  helpers:
+    submit:
+      create: "Создать %{model}"
+      update: Обновить
+  simple_form:
+    options:
+      event:
+        repeat_interval:
+          singular: Одиночное
+          daily: Каждый день
+          weekly: Каждую неделю
+          monthly: Каждый месяц
+          yearly: Каждый год
+    labels:
+      session:
+        email: Электронная почта
+        password: Пароль

@@ -1,0 +1,16 @@
+ru:
+  activerecord:
+    models:
+      user: Пользователь
+      event: Событие
+    attributes:
+      user:
+        name: Имя
+        email: Адрес электронной почты
+        password: Пароль
+        password_confirmation: Подтверждение пароля
+      event:
+        title: Название события
+        occurance_date: Дата события
+        repeat_interval: Повторение события
+        user: Пользователь
