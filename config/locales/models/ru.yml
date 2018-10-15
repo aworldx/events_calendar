@@ -4,9 +4,6 @@ ru:
       user: Пользователь
       event: Событие
     attributes:
-      password:
-        blank: Пароль не должен быть пустым
-        too_short: Пароль должен содержать минимум 6 символов
       user:
         name: Имя
         email: Адрес электронной почты
@@ -17,3 +14,18 @@ ru:
         occurance_date: Дата события
         repeat_interval: Повторение события
         user: Пользователь
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: Пароль не должен быть пустым
+              too_short: Пароль должен содержать минимум 6 символов
+        event:
+          attributes:
+            title:
+              blank: Заголовок не должен быть пустым
+            occurance_date:
+              blank: Дата не может быть пустой
+            repeat_interval:
+              blank: Период повторения не может быть пустым

@@ -3,6 +3,7 @@ class Event < ApplicationRecord
 
   validates :title, presence: true
   validates :occurance_date, presence: true
+  validates :repeat_interval, presence: true
 
   scope :active, -> { where(active: true) }
 
